@@ -1,0 +1,190 @@
+/*This is a SASS partial file responsible for the media queries that will make this website responsive*/
+//Media queries are created at breakpoints
+//SASS Partials are created with an underscore infront of their file names
+//Date Created: 24/03/2022
+//Time: 17:11
+
+@media screen and (max-width: 528px){
+    .about-container{
+        grid-template-columns: 1fr;
+        .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+        }
+        .left-about{
+            padding-right: 0;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .portfolios{
+        grid-template-columns: 1fr;
+    }
+
+    .blogs{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .section{
+        padding: 2rem 2.5rem;
+    }
+
+    .main-title{
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2.5rem;
+            }
+            .bg-text{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+
+//Contact needs an earlier break-point
+@media screen and (max-width: 1432px){
+    .header{
+        padding: 0 !important; //because header inherits section class      
+    }
+    .section{
+        padding: 7rem 11rem;
+    }
+    .contact-content-con{
+        flex-direction: column; //since this container has a flex display, flex direction is 
+        //used as compared to grid display
+        .right-contact{
+            margin-left: 0;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .contact-content-con .right-contact .i-c-2{
+        flex-direction: column;
+    }
+
+    //targeting last child of i-c-2
+    .contact-content-con .right-contact .i-c-2 :last-child{//:last-child is a pseudo selector
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1070px){
+    .about-container{
+        grid-template-columns: 1fr;
+        .right-about{
+            padding-top: 2.5rem;
+        }
+    }
+
+    .portfolios{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blogs{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-title{
+        h2{
+            font-size: 4rem;
+            span{
+                font-size: 4rem;
+            }
+            .bg-text{
+                font-size: 4.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 970px){
+    .section{
+        padding: 7rem 6rem;
+    }
+
+    //happening earlier
+    header{
+        padding: 0;
+    }
+    header .right-header{
+        padding: 0 !important; //overriding all the paddings
+    }
+
+    .theme-btn{
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-content{
+        grid-template-columns: 1fr; //1 column intead of two
+        padding-bottom: 6rem;
+    }
+    .left-header{
+        .h-shape{
+            display: none; //remove shape behind main pic
+        }
+    }
+    //putting text on top of pic
+    .right-header{
+        grid-row: 1;
+        width: 90%;
+        margin: 0 auto; //centering the content
+        .name{
+            font-size: 2.5rem !important;
+        }
+    }
+    .header-content .left-header .image{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    //shifting the controls from their initial position
+    .controls{
+        top: auto;
+        bottom: 0; //puts controls class at the bottom
+        flex-direction: row;
+        justify-content: center;
+        left: 50%; //making it centered
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{ //for each control
+            margin: 1rem 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .section{
+        padding: 7rem 3rem;
+    }
+    .about-stats{
+        .progress-bars{
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+        }
+    }
+    .main-title{
+        h2{
+            font-size: 3rem;
+            span{
+                font-size: 2.4rem;
+            }
+            .bg-text{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
