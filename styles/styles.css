@@ -457,15 +457,15 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 78%;
+  width: 85%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 60%;
+  width: 70%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 20%;
+  width: 70%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
@@ -473,11 +473,15 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 37%;
+  width: 90%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .c {
-  width: 50%;
+  width: 95%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .flutter {
+  width: 80%;
 }
 
 .stat-title {
@@ -1002,7 +1006,7 @@ section {
 }
 
 /*This is a SASS partial file responsible for the media queries that will make this website responsive*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 528px) {
   .about-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
