@@ -210,7 +210,7 @@ section{
             height: 90%;
             width: 68%;
             margin-left: 4rem;            
-            background-color: var(--color-black);
+            background-color: var(--color-primary);
             transition: all .4s ease-in-out;
             //targeting image itself
             img{
@@ -220,10 +220,10 @@ section{
                 margin-left: 5.5rem;
                 object-fit: cover; //to prevent stretch out
                 transition: all .4s ease-in-out;
-                filter: grayscale(100%);
-                &:hover{
-                    filter: grayscale(0);
-                }
+                // filter: grayscale(100%);
+                // &:hover{
+                //     filter: grayscale(0);
+                // }
             }
         }
     }

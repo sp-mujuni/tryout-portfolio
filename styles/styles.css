@@ -193,7 +193,7 @@ section {
   height: 90%;
   width: 68%;
   margin-left: 4rem;
-  background-color: var(--color-black);
+  background-color: var(--color-primary);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -204,10 +204,6 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
-}
-.header-content .left-header .image img:hover {
-  filter: grayscale(0);
 }
 .header-content .right-header {
   display: flex;
