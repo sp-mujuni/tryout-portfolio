@@ -746,7 +746,7 @@ section{
             top: 50%;
             left: 50%;
             color: var(--color-grey-5);
-            transition: all.4s ease-in-out;
+            transition: all 4s ease-in-out;
             z-index: -1; //behind text
             transform: translate(-50%, -50%); //centering the text
             font-weight: 800;
