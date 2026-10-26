@@ -28,6 +28,11 @@
         grid-template-columns: 1fr;
     }
 
+    .research-output{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
     .blogs{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
@@ -187,4 +192,3 @@
         }
     }
 }
-
